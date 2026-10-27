@@ -9,6 +9,10 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .ipynb_checkpoints/
+.cache/
+
+# Regenerate full-resolution metric depth arrays with project_points.py
+/results/**/depth_meters.npy
 
 # Local virtual environments and secrets
 .venv/
