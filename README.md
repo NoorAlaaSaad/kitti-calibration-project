@@ -149,13 +149,4 @@ Measured frame-0 results:
 
 The reference formula places 20,500 points inside the image; one point near an image boundary changes visibility between the two calibration routes.
 
-## Verify
-
-```bash
-.venv/bin/python -m pip install -r requirements-dev.txt
-.venv/bin/python -m pytest -q
-```
-
-The tests use hand-computed examples to check transform order, baseline handling, positive-depth and image-boundary filtering, nonfinite coordinates, nearest-depth collisions, empty inputs, and reflectance handling. A local-data regression check compares camera 03 against KITTI's reference formula; it skips when the large dataset is unavailable.
-
 The data archives, extracted dataset, virtual environment, caches, and generated `.npy` depth arrays are excluded from Git. The sample PNGs and summary can be kept with the assignment.
